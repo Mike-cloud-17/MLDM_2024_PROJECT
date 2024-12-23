@@ -32,8 +32,6 @@ dataset_sample = pd.read_csv(data_path, dtype={
     'play_count_msno': 'int'
 }).sample(1000, random_state=42)  # Sample 1000 rows for efficiency
 
-import random
-
 # Set up Spotify API credentials
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
     client_id="f6b12747988644599b9fcff30686adb2",
